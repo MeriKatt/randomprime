@@ -35,9 +35,9 @@ jobs:
     - name: Install powerpc-unknown-linux-gnu
       uses: actions-rs/toolchain@v1.0.1
       with:
-        toolchain: stable
-        components: powerpc-unknown-linux-gnu
-    - uses: actions-rs/cargo@v1.0.1
+        toolchain: powerpc-unknown-linux-gnu
+    - name: Build
+      uses: actions-rs/cargo@v1.0.1
       with:
         command: build
         args: --release
