@@ -30,7 +30,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions-rs/toolchain@v1.0.1
       with:
-        toolchain: stable powerpc-unknown-linux-gnu
+        toolchain: powerpc-unknown-linux-gnu
     - uses: actions-rs/cargo@v1.0.1
       with:
         command: build
